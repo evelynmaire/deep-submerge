@@ -1,0 +1,80 @@
+body {
+  background: #007991;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #007991, #78ffd6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #007991, #78ffd6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+  color: teal;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+  border-bottom: 1px solid teal;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: mediumaquamarine;
+  border-bottom: 1px solid mediumaquamarine;
+}
+
+h1 {
+  color: teal;
+}
+
+abbr {
+  border-bottom: 1px dotted teal;
+}
+
+.neptune {
+  border: 0 !important;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  padding: 2em;
+  width: 100%;
+  max-width: 1500px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.wrapper {
+  padding: 1em 0;
+}
+
+circle {
+  fill: none;
+  stroke: rgba(32, 178, 170, 0.6);
+  stroke-width: 3px;
+}
+
+/*Animation*/
+
+@keyframes pulse {
+  from {
+    transform: scale(5%)
+  }
+  to {
+    transform: scale(25%);
+  }
+}
+
+.index1 {
+  begin: 0s;
+  animation-name: pulse;
+  animation-duration: 1.5s infinite;
+}
